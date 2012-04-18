@@ -1,0 +1,9 @@
+inherit mate
+
+
+PKG_NAMES="libmatekbd libmatekbd4 libmatekbd-common libmatekbd-devel"
+libmatekbd_CONTENTS="usr/bin/*.exe usr/share/applications/"
+libmatekbd4_CONTENTS="usr/bin/cygmatekbd*-4.dll"
+libmatekbd_common_CONTENTS="etc/ usr/share/doc/ usr/share/libmatekbd/ usr/share/locale/"
+libmatekbd_devel_CONTENTS="usr/include/ usr/lib/"
+

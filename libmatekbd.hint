@@ -1,0 +1,5 @@
+category: MATE
+requires: libglib2.0_0 libgtk2.0_0 libintl8 libmateconf2_4 libmatekbd4 libxklavier16
+sdesc: "MATE keyboard configuration applet"
+ldesc: "MATE is a fork of the GNOME 2 desktop. It provides an intuitive
+and attractive desktop to Linux users using traditional metaphors."
