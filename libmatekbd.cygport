@@ -1,19 +1,30 @@
 inherit mate
 
 NAME="libmatekbd"
-VERSION=1.10.0
+VERSION=1.14.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="MATE keyboard configuration library"
 DESCRIPTION="MATE is a fork of the GNOME 2 desktop. It provides an intuitive
 and attractive desktop to Linux users using traditional metaphors."
 
-PKG_NAMES="libmatekbd4 libmatekbd-common libmatekbd-devel"
+PKG_NAMES="libmatekbd4 libmatekbd-common libmatekbd-devel girepository-Matekbd1.0"
 libmatekbd4_SUMMARY="${SUMMARY} (runtime)"
 libmatekbd4_REQUIRES="libmatekbd-common"
 libmatekbd4_CONTENTS="usr/bin/cygmatekbd*-4.dll"
 libmatekbd_common_SUMMARY="${SUMMARY} (data)"
-libmatekbd_common_CONTENTS="etc/ usr/share/"
+libmatekbd_common_CONTENTS="
+	usr/share/doc/
+	usr/share/glib-2.0/schemas/
+	usr/share/libmatekbd/
+	usr/share/locale/*/*/libmatekbd*
+"
 libmatekbd_devel_SUMMARY="${SUMMARY} (development)"
-libmatekbd_devel_CONTENTS="usr/include/ usr/lib/"
-
+libmatekbd_devel_REQUIRES="girepository-Matekbd1.0"
+libmatekbd_devel_CONTENTS="
+	usr/include/libmatekbd/
+	usr/lib/libmatekbd*.dll.a
+	usr/lib/pkgconfig/libmatekbd*.pc
+"
+girepository_Matekbd1_0_SUMMARY="${SUMMARY} (GObject Introspection)"
+girepository_Matekbd1_0_CONTENTS="usr/*/gir*-1.0/Matekbd-1.0.*"
