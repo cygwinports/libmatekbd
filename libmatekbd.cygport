@@ -1,7 +1,7 @@
 inherit mate
 
 NAME="libmatekbd"
-VERSION=1.16.0
+VERSION=1.18.2
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="MATE keyboard configuration library"
@@ -28,5 +28,3 @@ libmatekbd_devel_CONTENTS="
 "
 girepository_Matekbd1_0_SUMMARY="${SUMMARY} (GObject Introspection)"
 girepository_Matekbd1_0_CONTENTS="usr/*/gir*-1.0/Matekbd-1.0.*"
-
-CYGCONF_ARGS="--with-gtk=3.0"
