@@ -1,7 +1,7 @@
 inherit mate
 
 NAME="libmatekbd"
-VERSION=1.18.2
+VERSION=1.20.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="MATE keyboard configuration library"
